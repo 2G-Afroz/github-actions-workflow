@@ -6,6 +6,7 @@ on: # To register events
     branches: # Runs when see changes in any of the following branches
       - main
       - production
+  workflow_dispatch:
 
 jobs:
   hello_job: # Name of the job
