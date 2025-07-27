@@ -10,7 +10,7 @@ on: # To register events
 
 jobs:
   hello_job: # Name of the job
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest # name of machine on which it will run
     steps:
       - name: "Print Hello world" # Step name
