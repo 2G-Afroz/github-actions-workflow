@@ -1,0 +1,11 @@
+name: "Commit on any branch"
+
+on:
+  push:
+
+jobs:
+  push_any:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Someone commited"
+        run: echo "Someone Commited"
