@@ -7,6 +7,8 @@ on: # To register events
       - main
       - production
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 1" # Runs every monday at midnight UTC
 
 jobs:
   hello_job: # Name of the job
