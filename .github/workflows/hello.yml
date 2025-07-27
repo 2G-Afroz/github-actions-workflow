@@ -1,0 +1,15 @@
+name: "Hello Workflow" # Name of the workflow
+
+# Controls when the action will rul. Triggers the workflow on push some changes to main or production branch.
+on: # To register events
+  push: # Register on 'push'
+    branches: # Runs when see changes in any of the following branches
+      - main
+      - production
+
+jobs:
+  hello_job: # Name of the job
+    runs-on: ubuntu-latest # name of machine on which it will run
+    steps:
+      - name: "Print Hello world" # Step name
+        run: echo "Hello world"
