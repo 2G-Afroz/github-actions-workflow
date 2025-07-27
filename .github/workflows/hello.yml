@@ -15,3 +15,8 @@ jobs:
         run: echo "Hello world"
       - name: "Print Date"
         run: date
+  ls_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Print the current directory"
+        run: ls
